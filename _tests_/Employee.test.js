@@ -12,7 +12,7 @@ it("sets name via constuctor arguments", () => {
     expect(e.name).toBe(name);
 });
 
-it("set d via constuctor arguments", () => {
+it("set id via constuctor arguments", () => {
     const testValue= 100;
     const e = new Employee("Foo", testValue);
     expect(e.id).toBe(testValue);
