@@ -74,6 +74,7 @@ const startPrompt = () => {
     })
 ;}
 
+// Inquirer prompt to pick which employee to add next- each choice call the function associated
 const promptNext = () => {
     return inquire.prompt([
         {
@@ -94,3 +95,68 @@ const promptNext = () => {
             }
         });
 };
+
+const promptEngineer = () => {
+    console.log('Add a New Engineer');
+    return inquirer.prompt([
+        {
+            type: 'input',
+            name: 'name',
+            message:'What is the name of engineer? (Required)',
+            validate: engineerName=> {
+                if (engineerName){
+                    return true; 
+                } else {
+                console.log('Please enter the name of engineer!');
+                return false;
+              }
+            }
+        },
+        {
+            type: 'input',
+            name: 'employeeId',
+            message:'What is the engineer employee id? (Required)',
+            validate: employeeId=> {
+                if (employeeId){
+                    return true; 
+                } else {
+                console.log('Please enter the engineer employee Id!');
+                return false;
+              }
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message:'What is the engineer email address? (Required)',
+            validate: email => {
+                if (email){
+                    return true; 
+                } else {
+                console.log('Please enter the engineer email address!');
+                return false;
+              }
+            }
+        },
+        {
+            type: 'input',
+            name: 'githubUsername',
+            message:'What is the engineer GitHub username? (Required)',
+            validate: githubUsername=> {
+                if (githubUsername){
+                    return true; 
+                } else {
+                console.log('Please enter the engineer email address!');
+                return false;
+              }
+            }
+        }
+    ]).then(answers => {
+        console.log(answers);
+        const engineer = new Engineer(answers.name, answers.employeeId, answers.email, answers.githubUsername);
+        teamArray.push(engineer);
+        promptNext();
+    })
+};
+
+
