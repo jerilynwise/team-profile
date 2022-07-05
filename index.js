@@ -1,3 +1,4 @@
+// REQUIRED FILES/ADD ONS NEEDED TO BUILD THE TEAM
 const inquirer = require('inquirer');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
@@ -9,6 +10,7 @@ const OUTPUT_DIR = path.resolve(__dirname, "output")
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 const teamMembers = [];
 
+// PROMPT TO START BUILDING THE TEAM STARTING WITH THE MANAGER
 const promptManager = () => {
     return inquirer.prompt([
         {
@@ -71,6 +73,7 @@ const promptManager = () => {
     })
 };
 
+// PROMPT MENU GIVES THE OPTION TO CONTINUE TO BUILD THE TEAM AFTER THE MANAGER
 const promptMenu = () => {
     return inquirer.prompt([
         {
@@ -93,6 +96,7 @@ const promptMenu = () => {
         });
 };
 
+// WHEN ENGINEER IS SELECTED FROM PROMPT MENU-THEN ANSWER QUESTIONS BELOW
 const promptEngineer = () => {
     console.log(`
     ===============
@@ -161,6 +165,7 @@ const promptEngineer = () => {
     })
 };
 
+// INTERN SECTION IS CALLED WHEN SELECTED FROM PROMPT MENU 
 const promptIntern = () => {
     console.log(`
     ===============
@@ -229,6 +234,8 @@ const promptIntern = () => {
     })
 };
 
+
+// WHEN USER SELECTS FINISH BUILDING TEAM THIS FUNCTION PUSHING INFORMATION TO THE OUTPUT FOLDER IN AN IDEX.HTML
 const buildTeam = () => {
     console.log(`
     ===============

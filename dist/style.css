@@ -1,0 +1,48 @@
+/* HEADER STYLING */
+header {
+    color: white;
+    background-color:red;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin: 15px;
+    padding: 10px;
+}
+
+/* STYLING FOR AL CARDS ON PAGE */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    padding: 10px;
+}
+
+/* EACH CARD */
+.card {
+    padding: 10px;
+    margin: 15px;
+}
+
+/* CARD HEADER */
+.card-header {
+    color: white;
+    background-color: blue;
+
+}
+
+/* TEXT COLOR FOR ID/EMAIL/ETC */
+.list-group {
+    color: black;
+}
+
+/*STLYES THE ITEMS ONTO ONE LINE*/
+.list-group-item {
+    white-space: nowrap;
+    overflow: visible;
+}
+
+/* COLORS THE EMAIL LINKS */
+#email {
+    color:blue;
+}
