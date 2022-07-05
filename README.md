@@ -1,15 +1,6 @@
 # Team Profile Generator
   ## Description
   The motivation behind this project was to create a generator that would allow a manager to quickly make a webpage that would allow them to see their team's basic information.</br>
-  
-  ## Table of Contents
-
-  * [Installation](#🧑🏻‍🔧-installation)</br>
-  * [Usage](#👨‍💻-usage)</br>
-  * [License](#🧾-license)</br>
-  * [Contribuation](#👯‍♀️-contributing)</br>
-  * [Tests](#📝-tests)</br>
-  * [Questions](#🤷‍♀️-questions)</br>
 
   ## 🧑🏻‍🔧 Installation
   The following necessary dependancies must be installed to run the application
@@ -32,4 +23,4 @@
   [Github Repo](https://github.com/jerilynwise/team-profile)
   
   ## 🤷‍♀️ Questions 
-  If you have any further questions please don't heasitate to reach out via Github jerilynwise or directly by email jerilynwisedesigns@gmail.com
+  If you have any further questions please don't heasitate to reach out via https://github.com/jerilynwise or directly by email jerilynwisedesigns@gmail.com
